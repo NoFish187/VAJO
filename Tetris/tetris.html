@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tetris.css">
+    <link rel="icon" type="image/x-icon" href="resources/logo.ico">
+    <title>Tetris-Game</title>
+</head>
+
+<body>
+
+    <div id="start-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 2px solid black; padding: 20px; z-index: 1000;">
+        <h2>Willkommen zum Spiel!</h2>
+        <p>Drücke "Start", um zu beginnen.</p>
+        <button id="start-button">Start</button>
+        <p id="countdown" style="font-size: 24px;"></p>
+    </div>
+
+    <div id="wrapper">
+        <div id="left-div">
+            <img src="resources/logo.png" id="logo" alt="logo">
+            <hr>
+
+            <div id="score-div"> 
+                <label> Score: </label>
+                <label id="score"></label>
+            </div>
+            <div id="lines-div">
+                <label> Lines: </label>
+                <label id="lines"></label>
+            </div>
+            <div id="score-history"></div>  
+            
+        </div>
+        <div id="game-container">
+            <img src="resources/background.png" id="background" alt="background">
+            <canvas id="game-canvas"></canvas>
+        </div>
+        
+    </div>
+
+    <script src="tetris.js"></script>
+
+    <a href="/index.html" id="back_button">Home</a>
+</body>
+</html>

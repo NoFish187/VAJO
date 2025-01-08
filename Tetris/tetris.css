@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+#wrapper {
+    display: inline-block;
+    margin: 20px;
+}
+
+#left-div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20;
+    border: solid 1px white;
+    width: 286px;
+    height: 572.325px;
+}
+
+#logo {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+#game-container {
+    position: relative;
+    display: inline-block;
+}
+
+#background {
+    z-index: -1;
+}
+
+#game-canvas {
+    position: absolute;
+}
+
+#score-div,
+#lines-div {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: left;
+    margin: 8 0;
+}
+#back_button {
+    background-color: rgb(161, 161, 161);
+    border-radius: 70%;
+    padding: 10px 20px; /* Fügt etwas Innenabstand hinzu */
+    border: none; /* Entfernt den Standardrahmen */
+    color: black; /* Setzt die Textfarbe */
+    font-size: 20px; /* Setzt die Schriftgröße */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    cursor: pointer; /* Ändert den Mauszeiger, wenn über den Button gefahren wird */
+    transition: background-color 0.3s; /* Fügt einen sanften Übergang für den Hintergrund hinzu */
+}
+
+#back_button:hover {
+    background-color: rgb(130, 130, 130); /* Ändert die Hintergrundfarbe beim Hover */
+}
+
+#start-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
